@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDEs
+.vscode/
+.idea/
+.ipynb_checkpoints/
+
+# Virtual Environments
+venv/
+env/
+.env/
+
+# Data and Models
+data/
+models/
+*.pkl
+
+# Logs
+outputs/
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
