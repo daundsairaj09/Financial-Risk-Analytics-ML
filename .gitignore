@@ -28,3 +28,4 @@ outputs/
 ._*
 .Spotlight-V100
 .Trashes
+.env
