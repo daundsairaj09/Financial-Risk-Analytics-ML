@@ -16,4 +16,5 @@ requests
 httpx
 google-genai
 python-dotenv
-
+fpdf2
+shap
