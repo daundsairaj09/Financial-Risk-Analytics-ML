@@ -15,8 +15,6 @@ env/
 
 # Data and Models
 data/
-models/
-*.pkl
 
 # Logs
 outputs/
