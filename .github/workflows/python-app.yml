@@ -23,9 +23,11 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install flake8 pytest httpx
+        pip install flake8==7.1.1 pytest==8.0.0 httpx
         # Fixed typo: requirement.txt -> requirements.txt
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        # Verify pytest is installed natively
+        python -m pip list | grep pytest
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
@@ -35,7 +37,7 @@ jobs:
     - name: Run ML API Tests (Pytest)
       run: |
         # Ensure that the FastAPI mathematics haven't broken
-        PYTHONPATH=. pytest tests/
+        PYTHONPATH=. python -m pytest tests/
     
     # NEW MLOps CD Step: Ensure Docker containers still build
     - name: Build MLOps Docker Image (API)
