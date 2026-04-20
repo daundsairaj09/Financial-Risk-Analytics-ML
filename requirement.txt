@@ -8,3 +8,12 @@ xgboost
 jupyter
 streamlit
 plotly
+fastapi
+uvicorn
+pydantic
+pytest
+requests
+httpx
+google-genai
+python-dotenv
+
